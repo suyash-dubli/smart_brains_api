@@ -60,8 +60,8 @@ app.post('/imageurl',(req,res)=>{image.handleApiCall(req,res)});
 //     // res = false
 // });
 
-app.listen(3001,() =>{
-	console.log('app is runnong at port 3001')
+app.listen(process.env.PORT,() =>{
+	console.log(`app is runnong at port ${process.env.PORT}`)
 });
 
 /*--res
